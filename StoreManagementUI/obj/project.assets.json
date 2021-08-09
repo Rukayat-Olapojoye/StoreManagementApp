@@ -1,0 +1,227 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "ManagementBL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ManagementDataStore": "1.0.0",
+          "ManagementModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManagementBL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagementBL.dll": {}
+        }
+      },
+      "ManagementCommons/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ManagementCommons.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagementCommons.dll": {}
+        }
+      },
+      "ManagementDataStore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ManagementCommons": "1.0.0",
+          "ManagementModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManagementDataStore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagementDataStore.dll": {}
+        }
+      },
+      "ManagementModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ManagementModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManagementModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection/5.0.2": {
+      "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "ManagementBL/1.0.0": {
+      "type": "project",
+      "path": "../ManagementBL/ManagementBL.csproj",
+      "msbuildProject": "../ManagementBL/ManagementBL.csproj"
+    },
+    "ManagementCommons/1.0.0": {
+      "type": "project",
+      "path": "../ManagementCommons/ManagementCommons.csproj",
+      "msbuildProject": "../ManagementCommons/ManagementCommons.csproj"
+    },
+    "ManagementDataStore/1.0.0": {
+      "type": "project",
+      "path": "../ManagementDataStore/ManagementDataStore.csproj",
+      "msbuildProject": "../ManagementDataStore/ManagementDataStore.csproj"
+    },
+    "ManagementModels/1.0.0": {
+      "type": "project",
+      "path": "../ManagementModels/ManagementModels.csproj",
+      "msbuildProject": "../ManagementModels/ManagementModels.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "ManagementBL >= 1.0.0",
+      "ManagementCommons >= 1.0.0",
+      "ManagementDataStore >= 1.0.0",
+      "ManagementModels >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 5.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Rukayah\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj",
+      "projectName": "StoreManagementUI",
+      "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj",
+      "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj": {
+              "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj"
+            },
+            "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+              "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
+            },
+            "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+              "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj"
+            },
+            "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+              "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

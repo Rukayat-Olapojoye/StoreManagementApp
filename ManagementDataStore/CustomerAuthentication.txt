@@ -1,0 +1,4 @@
+CUSTOMER-|Rukayat|Olapojoye|ruki@gmail.com|rukilee@21|rukilee@21
+CUS-2021815122|Fatimah|Hassan|fati@gmail.com|fati@21|fati@21
+CUS-2021936683|Sarah|Rice|sara@gmail.com|saraa@21|saraa@21
+CUS-2021942496|Ramat|Adams|ramat@gmail.com|ram@123|ram@123

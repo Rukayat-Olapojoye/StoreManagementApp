@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HYkclPw1Y3K4+5wyau3sT6auKNntgaanUMDlhfo8rJddX3dzwfQPfFi3mlXjlog9gOf/ss6eI+tzGZGV0RE/7g==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rukayah\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\Rukayah\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

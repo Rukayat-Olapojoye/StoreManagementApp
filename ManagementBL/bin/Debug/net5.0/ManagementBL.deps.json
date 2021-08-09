@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ManagementBL/1.0.0": {
+        "dependencies": {
+          "ManagementDataStore": "1.0.0",
+          "ManagementModels": "1.0.0"
+        },
+        "runtime": {
+          "ManagementBL.dll": {}
+        }
+      },
+      "ManagementCommons/1.0.0": {
+        "runtime": {
+          "ManagementCommons.dll": {}
+        }
+      },
+      "ManagementDataStore/1.0.0": {
+        "dependencies": {
+          "ManagementCommons": "1.0.0",
+          "ManagementModels": "1.0.0"
+        },
+        "runtime": {
+          "ManagementDataStore.dll": {}
+        }
+      },
+      "ManagementModels/1.0.0": {
+        "runtime": {
+          "ManagementModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ManagementBL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagementCommons/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagementDataStore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManagementModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

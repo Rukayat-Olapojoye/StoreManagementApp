@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ManagementBL\ManagementBL.csproj" />
+    <ProjectReference Include="..\ManagementCommons\ManagementCommons.csproj" />
+    <ProjectReference Include="..\ManagementDataStore\ManagementDataStore.csproj" />
+    <ProjectReference Include="..\ManagementModels\ManagementModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
