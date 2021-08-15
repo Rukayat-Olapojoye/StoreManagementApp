@@ -2,7 +2,6 @@ C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\bin\Debu
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\bin\Debug\net5.0\ManagementCommons.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\bin\Debug\net5.0\ref\ManagementCommons.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\bin\Debug\net5.0\ManagementCommons.pdb
-C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.csprojAssemblyReference.cache
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.AssemblyInfoInputs.cache
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debu
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ref\ManagementCommons.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.pdb
+C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementCommons\obj\Debug\net5.0\ManagementCommons.csproj.AssemblyReference.cache

@@ -1,5 +1,6 @@
 using ManagementModels;
 using ManagementDataStore;
+using System.Threading.Tasks;
 namespace ManagementBL
 {
     public class Supermarket : IStore
@@ -11,7 +12,7 @@ namespace ManagementBL
             _storedata = storedata;
         }
 
-        public Store AddStore(string storeowner, string storeId, string storename, Store.StoreType storetype, int items)
+        public async Task<Store> AddStoreAsync(string storeowner, string storeId, string storename, Store.StoreType storetype, int items)
         {
             Store supermarket = new Store
             {
@@ -22,32 +23,31 @@ namespace ManagementBL
                 NumofProducts = items,
             };
             // Writing store to file
-            _storedata.WriteStoreToFileAsync(supermarket);
-            return supermarket;
+            var addedStore = await _storedata.WriteStoreToDBAsync(supermarket);
+            return addedStore;
         }
 
         //Yet to implement this*****
-        public int AddProducts(string storeId, int numofItems)
+        public bool AddProducts(string storeId, int numofItems,string loggedIncustomer)
         {
-            //return _storedata.UpdateStoreData(storeId, numofItems);
-            return 0;
-        }
-        //Yet to implement this
-        public bool RemoveProducts(string storeId, int items)
-        {
-            Store supermartet = new Store
-            {
-                StoreID = storeId
-            };
-            return true;
+
+            return _storedata.AddProductsToStoreAsync(storeId, numofItems, loggedIncustomer).Result;
         }
 
-        //Implemented but not working well.
+        public bool RemoveProducts(string storeId, int numofItems,string loggedIncustomer)
+        {
+            
+            return _storedata.RemoveProductsFromStoreAsync(storeId, numofItems, loggedIncustomer).Result;
+        }
+
         public int GetNumberofProducts(string storeid)
         {
-            return _storedata.GetNumOfStoreproducts(storeid);
+            return _storedata.GetNumOfStoreproductsAsync(storeid).Result;
         }
-
+        public Task<bool> DeleteStore(string storeID)
+        {
+            return _storedata.DeleteStores(storeID);
+        }
 
     }
 }

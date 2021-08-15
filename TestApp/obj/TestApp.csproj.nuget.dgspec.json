@@ -1,0 +1,417 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\TestApp\\TestApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj",
+        "projectName": "ManagementBL",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
+        "projectName": "ManagementCommons",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
+        "projectName": "ManagementDataStore",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+        "projectName": "ManagementModels",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj",
+        "projectName": "StoreManagementUI",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\TestApp\\TestApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\TestApp\\TestApp.csproj",
+        "projectName": "TestApp",
+        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\TestApp\\TestApp.csproj",
+        "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\TestApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementBL\\ManagementBL.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+              },
+              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj": {
+                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\StoreManagementUI\\StoreManagementUI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

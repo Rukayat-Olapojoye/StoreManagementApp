@@ -12,7 +12,7 @@ namespace ManagementBL
             customerdataStore = dataStore;
         }
 
-        public Customer Registration(string customerid, string firstname, string lastname, string email, string password, string confirmPassword)
+        public async Task<Customer> RegistrationAsync(string customerid, string firstname, string lastname, string email, string password, string confirmPassword)
         {
             Customer customer = new Customer
             {
@@ -25,8 +25,8 @@ namespace ManagementBL
 
             };
             //Writing user to file
-            customerdataStore.WriteCustomerToFileAsync(customer);
-            return customer;
+            var registeredCustomer = await customerdataStore.WriteCustomerToDBAsync(customer);
+            return registeredCustomer;
         }
 
         public async Task<Customer> LoginAsync(string email, string password)
@@ -36,7 +36,7 @@ namespace ManagementBL
                 Email = email,
                 Password = password,
             };
-            var customerfound = await customerdataStore.ReadCustomerFromFileAsync(customerlogin);
+            var customerfound = await customerdataStore.ReadCustomerFromDBAsync(customerlogin);
             if (customerfound == null)
             {
                 throw new System.Exception("Customer not found");

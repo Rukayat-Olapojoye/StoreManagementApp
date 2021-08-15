@@ -28,8 +28,8 @@ namespace StoreManagementUI
             var services = new ServiceCollection();
 
             services.AddScoped<ICustomerActions, CustomerActions>();
-            services.AddScoped<ICustomerDatastore, CustomerDatastore>();
-            services.AddScoped<IStoresDatastore, StoresDataStore>();
+            services.AddScoped<ICustomerDatastore, ADOCustomer>();
+            services.AddScoped<IStoresDatastore, ADOStore>();
             services.AddScoped<IStore, Supermarket>();
             services.AddScoped<IStore, Kiosk>();
             serviceProvider = services.BuildServiceProvider();

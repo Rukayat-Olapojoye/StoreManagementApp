@@ -1,3 +1,0 @@
-STORE-SPMT-815926|FatfatStores|Supermarket|35
-STORE-KSK-816937|Fatimakiosk|Kiosk|34
-STORE-KSK-938293|SaraRice|Kiosk|200

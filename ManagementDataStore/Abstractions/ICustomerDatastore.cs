@@ -6,7 +6,7 @@ namespace ManagementDataStore
 {
     public interface ICustomerDatastore
     {
-        Task<Customer> ReadCustomerFromFileAsync(Customer customerLogin);
-        Task<Customer> WriteCustomerToFileAsync(Customer customer);
+        Task<Customer> ReadCustomerFromDBAsync(Customer customerLogin);
+        Task<Customer> WriteCustomerToDBAsync(Customer customer);
     }
 }
