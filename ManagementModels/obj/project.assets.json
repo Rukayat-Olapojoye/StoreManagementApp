@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+      "projectUniqueName": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
       "projectName": "ManagementModels",
-      "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+      "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
       "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\obj\\",
+      "outputPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

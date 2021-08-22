@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StoreManagementUI": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

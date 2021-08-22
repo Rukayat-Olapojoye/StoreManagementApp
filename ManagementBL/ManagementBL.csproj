@@ -1,8 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Implementations\Kiosk.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ManagementModels\ManagementModels.csproj" />
     <ProjectReference Include="..\ManagementDataStore\ManagementDataStore.csproj" />
+    
   </ItemGroup>
 
   <PropertyGroup>

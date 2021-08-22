@@ -12,11 +12,12 @@ namespace StoreManagementUI
         {
             try
             {
-                ConfigureServices();
+                SeedClass.Seed(new StoreDBContext()).Wait();
 
-                ICustomerActions actions = serviceProvider.GetRequiredService<ICustomerActions>();
+               ConfigureServices();
 
-                ApplicationUI.ConsoleDisplay(actions);
+               ICustomerActions actions = serviceProvider.GetRequiredService<ICustomerActions>();
+               ApplicationUI.ConsoleDisplay(actions);
             }
             catch (Exception)
             {
@@ -28,10 +29,10 @@ namespace StoreManagementUI
             var services = new ServiceCollection();
 
             services.AddScoped<ICustomerActions, CustomerActions>();
-            services.AddScoped<ICustomerDatastore, CustomerDatastore>();
-            services.AddScoped<IStoresDatastore, StoresDataStore>();
-            services.AddScoped<IStore, Supermarket>();
-            services.AddScoped<IStore, Kiosk>();
+            services.AddScoped<ICustomerDatastore, EFCORECustomer>();
+            services.AddScoped<IStoresDatastore, EFCoreStore>();
+            services.AddScoped<IStore, StoreActions>();
+            //services.AddScoped<IStore, Kiosk>();
             serviceProvider = services.BuildServiceProvider();
         }
 

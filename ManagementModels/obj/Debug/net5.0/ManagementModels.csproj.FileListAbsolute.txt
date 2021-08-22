@@ -2,7 +2,7 @@ C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\bin\Debug
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\bin\Debug\net5.0\ManagementModels.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\bin\Debug\net5.0\ref\ManagementModels.dll
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\bin\Debug\net5.0\ManagementModels.pdb
-C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\obj\Debug\net5.0\ManagementModels.csprojAssemblyReference.cache
+C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\obj\Debug\net5.0\ManagementModels.csproj.AssemblyReference.cache
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\obj\Debug\net5.0\ManagementModels.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\obj\Debug\net5.0\ManagementModels.AssemblyInfoInputs.cache
 C:\Projects\BackEndProjects\Week11\StoreManagementApp\ManagementModels\obj\Debug\net5.0\ManagementModels.AssemblyInfo.cs

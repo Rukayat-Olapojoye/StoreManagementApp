@@ -3,12 +3,16 @@ using ManagementModels;
 using System.Threading.Tasks;
 using System;
 using ManagementCommons;
+using System.Collections.Generic;
 namespace ManagementDataStore
 {
-    public class StoresDataStore : IStoresDatastore
+    public class StoresDataStore
     {
+
+        int numOfProducts;
+
         static string filepath = "../ManagementDataStore/StoreData.txt";
-        public async Task<Store> WriteStoreToFileAsync(Store newstore)
+        public async Task<Store> WriteStoreToDBAsync(Store newstore)
         {
             if (!File.Exists(filepath))
             {
@@ -22,7 +26,7 @@ namespace ManagementDataStore
             //{
             using (StreamWriter streamWriter = File.AppendText(filepath))
             {
-                string StoreDetails = $"{newstore.StoreID}|{newstore.StoreName}|{newstore.TypeOfStore}|{newstore.NumofProducts}";
+                string StoreDetails = $"{newstore.customersId}|{newstore.Id}|{newstore.StoreName}|{newstore.TypeOfStore}|{newstore.NumofProducts}";
                 streamWriter.WriteLine(StoreDetails);
             }
             //}
@@ -37,7 +41,7 @@ namespace ManagementDataStore
             return newstore;
         }
 
-        public async Task<Store> ReadStoreFromFileAsync(Store store)
+        public async Task<Store> ReadStoreFromDBAsync(Store store)
         {
             if (!File.Exists(filepath))
             {
@@ -55,7 +59,7 @@ namespace ManagementDataStore
 
                 foreach (var userItem in userRow)
                 {
-                    if (userItem.Contains(store.StoreID))
+                    if (userItem.Contains(store.Id))
                     {
                         //Write logic here to print all files
                     }
@@ -65,39 +69,39 @@ namespace ManagementDataStore
             return store;
         }
 
-        public void PrintAllStores()
+        public async Task<List<Store>> PrintAllCustomerStoresAsync(string customerID)
         {
             using (StreamReader streamReader = File.OpenText(filepath))
             {
-                //Getting the content in the file and saving it in (fileContent)
-                string fileContent = streamReader.ReadToEnd();
-                //Triming off empty line space at the end of the content
+                string fileContent = await streamReader.ReadToEndAsync();
                 fileContent = fileContent.TrimEnd();
-                //Splitting contents into single lines (rows)
                 string[] storeRow = fileContent.Split(Environment.NewLine);
-                //Invoking methods for fomatting display table for printing
-                ListDisplayLayout.PrintTableLine();
-                ListDisplayLayout.PrintTableRow("StoreID", "StoreName", "StoreType", "No of Products");
-                ListDisplayLayout.PrintTableLine();
-                // looping through each row items
-                foreach (var storeItem in storeRow)
+                List<Store> storeList = new List<Store>();
+                foreach (string storeItem in storeRow)
                 {
-                    //Splitting each row item to get user properties.
-                    string[] storeDetails = storeItem.Split('|');
-                    //Printing each item to the console.
-                    ListDisplayLayout.PrintTableRow(storeDetails[0], storeDetails[1], storeDetails[2], storeDetails[3]);
-                    ListDisplayLayout.PrintTableLine();
+                    var storedetails = storeItem.Split('|');
+                    if (storedetails[0] == customerID)
+                    {
+                        var foundstore = new Store
+                        {
+                            customersId = storedetails[0],
+                            Id = storedetails[1],
+                            StoreName = storedetails[2],
+                            TypeOfStore = (Store.StoreType)Enum.Parse(typeof(Store.StoreType), storedetails[3]),
+                            NumofProducts = Int32.Parse(storedetails[4])
+                        };
 
-
+                        storeList.Add(foundstore);
+                    }
 
                 }
-
+                return storeList;
             }
 
         }
-        public int GetNumOfStoreproducts(string storeId)
+        public int GetNumOfStoreproductsAsync(string storeId)
         {
-            int numOfProducts = 0;
+
             using (StreamReader streamReader = File.OpenText(filepath))
             {
                 //Getting the content in the file and saving it in (fileContent)
@@ -117,7 +121,7 @@ namespace ManagementDataStore
 
             }
         }
-
+     
 
     }
 }

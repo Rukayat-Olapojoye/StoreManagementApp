@@ -1,5 +1,8 @@
 using ManagementModels;
 using ManagementDataStore;
+using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
 namespace ManagementBL
 {
     public class Kiosk : IStore
@@ -10,43 +13,55 @@ namespace ManagementBL
         {
             _storedata = storedata;
         }
-        public Store AddStore(string storeowner, string storeId, string storename, Store.StoreType storetype, int items)
+        public async Task<Store> AddStoreAsync(string storeowner, string storeId, string storename, Store.StoreType storetype, int items)
         {
             Store kiosk = new Store
             {
                 StoreOwner = storeowner,
-                StoreID = storeId,
+                Id = storeId,
                 StoreName = storename,
                 TypeOfStore = storetype,
                 NumofProducts = items,
 
             };
-            // Writing store to file
-            _storedata.WriteStoreToFileAsync(kiosk);
-            return kiosk;
+            // Writing store to db
+            var addedStore = await _storedata.WriteStoreToDBAsync(kiosk);
+            return addedStore;
         }
 
-        //Yet to implement this
-        public int AddProducts(string storeId, int numofItems)
+        
+        public bool AddProducts(string storeId, int numofItems, string loggedIncustomer)
         {
             //Read from store files 
-            return 0;
+            return _storedata.AddProductsToStoreAsync(storeId, numofItems, loggedIncustomer).Result;
         }
 
         //Yet to implement this
-        public bool RemoveProducts(string storeId, int items)
+        public bool RemoveProducts(string storeId, int numofItems, string loggedIncustomer)
         {
-            Store kiosk = new Store
+            int currentNoofProducts = _storedata.GetNumOfStoreproductsAsync(storeId).Result;
+            if (currentNoofProducts <= 100)
             {
-                StoreID = storeId
-            };
-            return true;
+                throw new InvalidOperationException("You cannot remove from Kiosk");
+            }
+            return _storedata.RemoveProductsFromStoreAsync(storeId, numofItems, loggedIncustomer).Result;
 
+        }
+
+       public async Task<List<Store>> GetAllCustomerStoresAsync(string customerid)
+        {
+            return await _storedata.PrintAllCustomerStoresAsync(customerid);
         }
         //Implemented but not working well.
         public int GetNumberofProducts(string storeid)
         {
-            return _storedata.GetNumOfStoreproducts(storeid);
+            return _storedata.GetNumOfStoreproductsAsync(storeid).Result;
+        }
+
+
+        public Task<bool> DeleteStore(string storeID)
+        {
+            return _storedata.DeleteStores(storeID);
         }
     }
 

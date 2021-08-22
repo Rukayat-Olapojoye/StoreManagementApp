@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagementModels", "Managem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManagementUI", "StoreManagementUI\StoreManagementUI.csproj", "{201F7EF0-2852-46A9-BCBD-59A167A7A562}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{371C6B33-BC5F-43BB-913B-D497996F6969}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{201F7EF0-2852-46A9-BCBD-59A167A7A562}.Release|x64.Build.0 = Release|Any CPU
 		{201F7EF0-2852-46A9-BCBD-59A167A7A562}.Release|x86.ActiveCfg = Release|Any CPU
 		{201F7EF0-2852-46A9-BCBD-59A167A7A562}.Release|x86.Build.0 = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|x64.Build.0 = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Debug|x86.Build.0 = Debug|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|x64.ActiveCfg = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|x64.Build.0 = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|x86.ActiveCfg = Release|Any CPU
+		{371C6B33-BC5F-43BB-913B-D497996F6969}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

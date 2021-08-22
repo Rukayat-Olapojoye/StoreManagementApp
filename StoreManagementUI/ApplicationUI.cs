@@ -112,13 +112,15 @@ namespace StoreManagementUI
                             Console.Clear();
                             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
-                            customerID = $"CUS-{DateTime.Now.Year}{DateTime.Now.Day}{DateTime.Now.Minute}{DateTime.Now.Millisecond}";
-
-                            Customer customer = actions.Registration(customerID, customerFirstName, customerLastName, customerEmail, customerPassword, customerConfirmPassword);
-                            Console.WriteLine($"{customer.FirstName} {customer.LastName}: registered Successfully!!!");
+                            //customerID = $"CUS-{DateTime.Now.Year}{DateTime.Now.Day}{DateTime.Now.Minute}{DateTime.Now.Millisecond}";
+                            customerID = Guid.NewGuid().ToString();
+                            var newcustomer = actions.RegistrationAsync(customerID, customerFirstName, customerLastName, customerEmail, customerPassword, customerConfirmPassword);
+                            Console.WriteLine($"{newcustomer.Result.FirstName} {newcustomer.Result.LastName}: registered Successfully!!!");
                             break;
 
                         case 2:
+
+
                             //Requesting user email
                             Console.WriteLine("Enter Email address.Format:name@domain.com");
                             customerEmail = Console.ReadLine();
@@ -145,22 +147,24 @@ namespace StoreManagementUI
                                 Console.WriteLine("Please enter a valid Password");
                                 customerPassword = Console.ReadLine();
                             }
-                            var registeredCustomer = actions.LoginAsync(customerEmail, customerPassword);
-                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+                            var registeredCustomer = actions.LoginAsync(customerEmail, customerPassword).Result;
                             Console.Clear();
 
                             //Checking if user is registered.
                             //if yes, load the store console
-                            if (registeredCustomer.Result.FirstName != null)
+                            if (registeredCustomer.FirstName != null)
                             {
                                 try
+
                                 {
                                     Program.ConfigureServices();
                                     IStore storeActions = Program.serviceProvider.GetRequiredService<IStore>();
-                                    //Loading the store console.
-                                    Console.WriteLine($"Welcome Customer,{registeredCustomer.Result.FirstName}!!!");
-                                    Console.WriteLine($"Your CustomerID is:{registeredCustomer.Result.CustomerID}");
-                                    StoreConsoleUI.StoreConsoleDisplay(storeActions);
+
+                                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                                    Console.WriteLine($"Welcome Customer,{registeredCustomer.FirstName}!!!");
+                                    Console.WriteLine($"Your CustomerID is:{registeredCustomer.Id}");
+                                    StoreConsoleUI.StoreConsoleDisplay(storeActions, registeredCustomer.Id);
                                 }
                                 catch (Exception)
                                 {
@@ -176,6 +180,7 @@ namespace StoreManagementUI
 
                         case 0:
                             stopApplication = true;
+                            Console.ForegroundColor = ConsoleColor.DarkMagenta;
                             Console.WriteLine("Thank you! Bye!!!");
                             break;
 

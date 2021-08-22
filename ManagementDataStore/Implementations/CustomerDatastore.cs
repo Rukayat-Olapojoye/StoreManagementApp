@@ -8,7 +8,7 @@ namespace ManagementDataStore
     public class CustomerDatastore : ICustomerDatastore
     {
         static string filepath = "../ManagementDataStore/CustomerAuthentication.txt";
-        public async Task<Customer> WriteCustomerToFileAsync(Customer customer)
+        public async Task<Customer> WriteCustomerToDBAsync(Customer customer)
         {
             if (!File.Exists(filepath))
             {
@@ -22,7 +22,7 @@ namespace ManagementDataStore
             //{
             using (StreamWriter streamWriter = File.AppendText(filepath))
             {
-                string CustomerDetails = $"{customer.CustomerID}|{customer.FirstName}|{customer.LastName}|{customer.Email}|{customer.Password}|{customer.ConfirmPassword}";
+                string CustomerDetails = $"{customer.Id}|{customer.FirstName}|{customer.LastName}|{customer.Email}|{customer.Password}|{customer.ConfirmPassword}";
                 streamWriter.WriteLine(CustomerDetails);
                 await streamWriter.DisposeAsync();
             }
@@ -39,7 +39,7 @@ namespace ManagementDataStore
             return customer;
         }
 
-        public async Task<Customer> ReadCustomerFromFileAsync(Customer customerlogin)
+        public async Task<Customer> ReadCustomerFromDBAsync(Customer customerlogin)
         {
             if (!File.Exists(filepath))
             {
@@ -61,7 +61,7 @@ namespace ManagementDataStore
                     if ((userItem.Contains(customerlogin.Email)) && (userItem.Contains(customerlogin.Password)))
                     {
                         string[] userDetails = userItem.Split('|');
-                        customerlogin.CustomerID = userDetails[0].ToString();
+                        customerlogin.Id = userDetails[0].ToString();
                         customerlogin.FirstName = userDetails[1].ToString();
                         customerlogin.LastName = userDetails[2].ToString();
 

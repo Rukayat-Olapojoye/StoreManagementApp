@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {}
+    "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+    "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
+        "projectUniqueName": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
         "projectName": "ManagementCommons",
-        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
+        "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj",
         "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\obj\\",
+        "outputPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,18 +54,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
+    "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
+        "projectUniqueName": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
         "projectName": "ManagementDataStore",
-        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
+        "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementDataStore\\ManagementDataStore.csproj",
         "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementDataStore\\obj\\",
+        "outputPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementDataStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,11 +82,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
-                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
+              "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj": {
+                "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementCommons\\ManagementCommons.csproj"
               },
-              "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
-                "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
+              "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+                "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj"
               }
             }
           }
@@ -100,6 +100,26 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -115,18 +135,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
+    "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+        "projectUniqueName": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
         "projectName": "ManagementModels",
-        "projectPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
+        "projectPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\ManagementModels.csproj",
         "packagesPath": "C:\\Users\\Rukayah\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\BackEndProjects\\Week11\\StoreManagementApp\\ManagementModels\\obj\\",
+        "outputPath": "C:\\Users\\Rukayah\\Desktop\\Week13 Submission\\StoreManagementApp\\ManagementModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rukayah\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
